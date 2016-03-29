@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Simple Quiz App</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="build/css/bootstrap.min.css">
+    <link rel="stylesheet" href="build/css/bootstrap-theme.min.css">
+
+    <!-- Custom style -->
+    <link rel="stylesheet" href="build/css/custom-style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="build/js/html5shiv.min.js"></script>
+      <script src="build/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- In case the connection is lost-->
+    <script type="text/javascript">
+      window.jQuery || document.write("<script src='build/js/jquery-1.12.2.min.js'><\/script>");
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- In case the connection is lost-->
+    <script type="text/javascript">
+      window.jQuery || document.write("<script src='build/js/bootstrap.min.js'><\/script>");
+    </script>
+
+    <!--Custom script-->
+    <script type="text/javascript" src="build/js/custom-script.js"></script>
+
+  </head>
+  <body>
+    <!--The header-->
+    <header>
+      <div class="container">
+        <div class="well">
+          <h2>Responsive Quiz App</h2>
+          <p>Test your knowledge in <strong>JavaScript </strong>fundamentals</p>
+          <p>
+            <a class="btn btn-primary btn-lg" target="_blank" href="http://www.w3schools.com/js/">Learn more</a>
+          </p>
+          <div id="result"></div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <div class="well">
+          <form id="quizForm" onsubmit="return submitAnswers()">
+    
+            <h3>1. In which HTML element do we put JavaScript code?</h3>
+            <div class="radio"><label><input type="radio" name="q1" id="q1a" value="a">a. &lt;script&gt;</label></div>
+            <div class="radio"><label><input type="radio" name="q1" id="q2b" value="b">b. &lt;js&gt;</label></div>
+            <div class="radio"><label><input type="radio" name="q1" id="q3c" value="c">c. &lt;body&gt;</label></div>
+            <div class="radio"><label><input type="radio" name="q1" id="q4d" value="d">d. &lt;link&gt;</label></div>
+
+            <h3>2. Which HTML attribute is used to reference an external JavaScript file?</h3>
+            <div class="radio"><label><input type="radio" name="q2" id="q2a" value="a">a. rel</label></div>
+            <div class="radio"><label><input type="radio" name="q2" id="q2b" value="b">b. src</label></div>
+            <div class="radio"><label><input type="radio" name="q2" id="q2c" value="c">c. type</label></div>
+            <div class="radio"><label><input type="radio" name="q2" id="q2d" value="d">d. href</label></div>
+
+            <h3>3. How would you write "Hello" in an alert box?</h3>
+            <div class="radio"><label><input type="radio" name="q3" id="q3a" value="a">a. msg("Hello");</label></div>
+            <div class="radio"><label><input type="radio" name="q3" id="q3b" value="b">b. puts "Hello"</label></div>
+            <div class="radio"><label><input type="radio" name="q3" id="q3c" value="c">c. alert('Hello');</label></div>
+            <div class="radio"><label><input type="radio" name="q3" id="q3d" value="d">d. document.write("Hello");</label></div>
+
+            <h3>4. JavaScript is directly related to the "Java" programming language?</h3>
+            <div class="radio"><label><input type="radio" name="q4" id="q4a" value="a">a. true</label></div>
+            <div class="radio"><label><input type="radio" name="q4" id="q4b" value="b">b. false</label></div>
+
+
+            <h3>5. A variable in JavaScript must start with which special character</h3>
+            <div class="radio"><label><input type="radio" name="q5" id="q5a" value="a">a. No one</label></div>
+            <div class="radio"><label><input type="radio" name="q5" id="q5b" value="b">b. @</label></div>
+            <div class="radio"><label><input type="radio" name="q5" id="q5c" value="c">c. #</label></div>
+            <div class="radio"><label><input type="radio" name="q5" id="q5d" value="d">d. $</label></div>
+
+            <button type="submit" class="btn btn-primary">Okay, go!</button>
+
+            <br/><br/>
+
+            <p style="text-align: center">Copyright &copy; 2016, All rights</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
